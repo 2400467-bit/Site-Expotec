@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Fortec FS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .download-header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        /* ---------------------------------------------------- */
+        /* NOVO CSS PARA O EFEITO DE APARECIMENTO (FADE-IN) */
+        /* ---------------------------------------------------- */
+
+        .fade-in-element {
+            opacity: 0; /* Inicia o elemento invisível */
+            transform: translateY(20px); /* Começa ligeiramente abaixo */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transição suave */
+        }
+
+        .fade-in-element.visible {
+            opacity: 1; /* Torna o elemento totalmente visível */
+            transform: translateY(0); /* Move para a posição original */
+        }
+        
+        /* ---------------------------------------------------- */
+        /* CSS JÁ EXISTENTE */
+        /* ---------------------------------------------------- */
+
+        .download-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 2rem;
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .download-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-download {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-download:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .version-badge {
+            background-color: var(--accent-color);
+            font-size: 0.8rem;
+        }
+        
+        .system-requirements {
+            background-color: #f1f8ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .download-stats {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-car me-2"></i>Fortec FS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="sobre.html"><i class="fas fa-info-circle me-1"></i> Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="membros.html"><i class="fas fa-users me-1"></i> Membros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="download.html" style="color: rgb(255, 251, 251) !important;"><i class="fas fa-download me-1"></i> Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="download-header fade-in-element visible">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3"><i class="fas fa-download me-2"></i>Download Fortec FS</h1>
+            <p class="lead">Obtenha a versão mais recente do nosso software</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card download-card mb-4 fade-in-element">
+                    <div class="card-body text-center py-4">
+                        <div class="download-icon">
+                            <i class="fas fa-file-archive"></i>
+                        </div>
+                        <h2 class="h3 mb-3">Fortec FS v2.1.1</h2>
+                        <span class="badge version-badge mb-3">ÚLTIMA VERSÃO</span>
+                        <p class="text-muted mb-4">O pacote completo com todos os recursos necessários para começar.</p>
+
+                        <a href="https://www.mediafire.com/file/kcs9e7r0xvozejv/app-release.apk/file" 
+                            class="btn btn-download btn-lg" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <i class="fas fa-download me-2"></i> Download (77,1 MB)
+                        </a>
+                        <div class="mt-3">
+                            <small class="text-muted">Lançado em: 25/10/2025</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card download-card fade-in-element">
+                    <div class="card-body">
+                        <h3 class="h4 mb-4"><i class="fas fa-list-check me-2"></i>Recursos Incluídos</h3>
+                        <ul class="feature-list">
+                            <li>Interface de usuário moderna e intuitiva</li>
+                            <li>Suporte para múltiplas plataformas</li>
+                            <li>Configuração rápida e fácil</li>
+                            <li>Documentação detalhada incluída</li>
+                            <li>Atualizações automáticas</li>
+                            <li>Suporte técnico 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card download-card mb-4 fade-in-element">
+                    <div class="card-body">
+                        <h3 class="h4 mb-4"><i class="fas fa-info-circle me-2"></i>Informações do Download</h3>
+                        <div class="download-stats mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Tamanho:</span>
+                                <strong>77,1 MB</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Downloads:</span>
+                                <strong>51</strong>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Versão:</span>
+                                <strong>2.1.1</strong>
+                            </div>
+                        </div>
+                        
+                        <h4 class="h5 mt-4 mb-3"><i class="fas fa-cog me-2"></i>Requisitos do Sistema</h4>
+                        <div class="system-requirements">
+                            <ul class="list-unstyled">
+                                <li><strong>Sistema Operacional:</strong> Android 12+</li>
+                                <li><strong>Processador:</strong> 2.0 GHz dual-core</li>
+                                <li><strong>Memória:</strong> 4 GB RAM</li>
+                                <li><strong>Armazenamento:</strong> 500 MB disponível</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card download-card fade-in-element">
+                    <div class="card-body">
+                        <h3 class="h4 mb-3"><i class="fas fa-history me-2"></i>Versões Anteriores</h3>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                v0.9.5 Beta incompleto e inativado
+                                <span class="badge bg-secondary">25 MB</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                v0.9.0 Beta inativado
+                                <span class="badge bg-secondary">23 MB</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                v0.8.5 Alpha inativado
+                                <span class="badge bg-secondary">20 MB</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card download-card fade-in-element">
+                    <div class="card-body">
+                        <h3 class="h4 mb-3"><i class="fas fa-question-circle me-2"></i>Precisa de ajuda?</h3>
+                        <p>Se você encontrar qualquer problema durante o download ou instalação, por favor consulte nossa <a href="#">documentação</a> ou entre em contato com nosso <a href="#">suporte técnico</a>.</p>
+                        <div class="alert alert-info mt-3">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            Qualquer duvida ou error contatar os desenvolvedores do projeto
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5 fade-in-element visible">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Fortec FS</h5>
+                    <p class="text-muted">O melhor software de consulta de placas para suas necessidades.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted mb-0">&copy; 2025 Fortec FS. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const elements = document.querySelectorAll('.fade-in-element');
+            let delay = 0;
+
+            elements.forEach(element => {
+                // Se o elemento não tiver a classe 'visible' (como os cards), ele é animado
+                if (!element.classList.contains('visible')) {
+                    setTimeout(() => {
+                        element.classList.add('visible');
+                    }, delay);
+                    // Aumenta o atraso para o próximo elemento para criar um efeito cascata
+                    delay += 300; // Atraso de 150ms entre cada card
+                }
+            });
+        });
+    </script>
+</body>
+</html>

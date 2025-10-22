@@ -1,0 +1,187 @@
+body {
+    background-color: whitesmoke;
+    color: 1b2842 ; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    
+}
+p {
+    color: black;
+}
+
+.imagem{
+margin: 0 auto;    
+display: block;    
+}
+.navbar-nav .nav-link:hover {
+    background-color: #343a40; 
+    border-radius: 5px; 
+}
+.sobre {
+    background-color: #47bbb5; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 1200px;         
+    min-height: 600px;   
+    font-size: 12px;
+    
+}
+.explicacao{
+    font-size: 20px;
+}
+.explicadois{
+    font-size: 20px;
+}
+.tech-card {
+border-radius: 15px;
+color:#B0B0F8;
+text-align: center;
+padding: 20px;
+min-height: 200px;
+}
+
+.tech-card img {
+max-width: 60px;
+margin: 0 auto 15px;
+}
+
+.flutter { background: #836FFF		; color: black;}
+.dart { background: #0175C2; color: black;}
+.firestore { background: #FF6F00; color: black;}
+.emulators { background: #FFCA28; color: black; }
+.mlkit { background: #9ACD32	; color: black;}
+.proguard { background: #6200EA; color: black;}
+.flutter .card-text {
+color: white; 
+}
+
+.dart .card-text {
+color: white; 
+}
+
+.firestore .card-text {
+color: white; 
+}
+
+.emulators .card-text {
+color: white; 
+}
+
+.mlkit .card-text {
+color: white; 
+}
+
+.proguard .card-text {
+color: white; 
+}
+.sobre{
+    color: white;
+    font-weight: 600;    
+}
+.Pagina_Inicial {
+    background-color: #dee5ee; 
+    padding: 40px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;         
+    min-height: 870px;   
+    font-size: 12px;
+    text-align: center;
+}
+
+    button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.Membros {
+    color: black;
+  padding: 0 10px;
+}
+.Membros .membro {
+    text-align: center;      /* Centraliza o conteúdo de cada membro */
+}
+.foto-membro {
+    border-radius: 50px;
+    transition: width 0.5s ease, height 0.5s ease;
+    cursor: pointer;
+}
+
+
+.foto-membro:hover {
+    width: 200px;
+    height: 200px;
+}
+.Membros p {
+    color: grey;
+}
+.membro_designer p {
+    color: black;
+}
+.membro_dev p {
+    color: black;
+}
+
+
+.icone {
+  width: 35px;
+  height: 30px;
+  object-fit: contain; 
+}
+
+.membro, .membro_designer, .membro_dev {
+  margin-bottom: 10px;
+}
+/* --- 1. Estilização Base e Transição (Obrigatório para Animação) --- */
+
+.tech-card {
+    /* Estilo básico de um card do Bootstrap */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra inicial suave */
+    overflow: hidden; /* Garante que o conteúdo fique dentro da borda */
+
+    /* CHAVE DA ANIMAÇÃO: Torna as mudanças de estilo suaves */
+    /* Anima 'transform' e 'box-shadow' em 0.4 segundos */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Estilo para as imagens dentro do card */
+.tech-card img {
+    /* Define a transição para a imagem (para suavizar o zoom) */
+    transition: transform 0.4s ease; 
+}
+
+/* Estilo para o título dentro do card */
+.tech-card .card-title {
+    color: #333; /* Cor inicial do texto */
+    /* Define a transição de cor do título */
+    transition: color 0.4s ease;
+}
+
+/* --- 2. Animação de HOVER (Quando o mouse encosta no Card) --- */
+
+.tech-card:hover {
+    /* 1. Efeito de Levantamento */
+    transform: translateY(-10px); /* Move o card 10px para cima */
+
+    /* 2. Sombra Aumentada */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25); /* Sombra maior e mais escura */
+}
+
+/* 3. Efeito na Imagem (quando o card está em hover) */
+.tech-card:hover img {
+    /* Leve zoom na imagem */
+    transform: scale(1.05); 
+}
+
+/* 4. Efeito no Título (quando o card está em hover) */
+.tech-card:hover .card-title {
+    /* Muda a cor do título para destacar */
+    color: #007bff; /* Exemplo: Azul Bootstrap. Você pode substituir por sua cor primária */
+}
+
+  
