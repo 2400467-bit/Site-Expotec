@@ -10,53 +10,43 @@
     
     <style>
         /* Estilos de Animação */
-        
-        /* 1. Estado Inicial (Invisível e Deslocado) */
         .animated-element {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
-        /* 2. Estado Final (Visível e na posição original) */
         .fade-in {
             opacity: 1;
             transform: translateY(0);
         }
 
-        /* Define a transição para os cards (Hover) */
         .tech-card {
             border: none;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            /* Mantém a transição do hover, mas a animação de entrada é controlada pelo .animated-element */
             transition: transform 0.4s ease, box-shadow 0.4s ease; 
         }
 
-        /* Estilo para as imagens dentro do card */
         .tech-card img {
             transition: transform 0.4s ease; 
         }
 
-        /* Estilo para o título dentro do card */
         .tech-card .card-title {
             color: #333;
             transition: color 0.4s ease;
         }
 
-        /* ANIMAÇÃO DE HOVER (Quando o mouse encosta no Card) */
         .tech-card:hover {
             transform: translateY(-10px); 
             box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
         }
 
-        /* Efeito na Imagem (quando o card está em hover) */
         .tech-card:hover img {
             transform: scale(1.05); 
         }
 
-        /* Efeito no Título (quando o card está em hover) */
         .tech-card:hover .card-title {
             color: black; 
         }
@@ -93,14 +83,14 @@
     <div class="container my-5">
         <div class="sobre">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-12 col-md-4">
                     <h1 class="animated-element" style="transition-delay: 0.1s;">Sobre o FS App.</h1>
                     <br>
                     <div class="explicacao">
                         <p class="animated-element" style="transition-delay: 0.3s;">
                             O App FS foi desenvolvido com Flutter, garantindo desempenho nativo tanto em Android a partir de um único código-fonte. 
                             A aplicação integra-se ao Firebase, que fornece autenticação segura, armazenamento em nuvem, banco de dados em tempo real 
-                            e funções serverless, permitindo escalabilidade e confiabilidade.  
+                            e funções serverless, permitindo escalabilidade e confiabilidade.  
                         </p>
                     </div>
                     <div class="explicadois">
@@ -108,35 +98,35 @@
                     </div>
                 </div>
                 
-                <div class="col-md-8">
+                <div class="col-12 col-md-8">
                     <div class="row">
-                        <div class="col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card tech-card flutter animated-element" style="transition-delay: 0.7s;">
                                 <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <img src="imagem 1.png" alt="flutter" width="50px" height="50px">
+                                <div class="card-body text-center">
+                                    <img src="imagem 1.png" alt="flutter" class="img-fluid mb-2" style="max-width: 60px;">
                                     <h5 class="card-title">FLUTTER</h5>
                                     <p class="card-text">Framework multiplataforma que oferece UI moderna, responsiva e de alto desempenho.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card tech-card dart animated-element" style="transition-delay: 0.9s;">
                                 <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <img src="imagem 2.png" alt="dart">
+                                <div class="card-body text-center">
+                                    <img src="imagem 2.png" alt="dart" class="img-fluid mb-2" style="max-width: 60px;">
                                     <h5 class="card-title">DART</h5>
                                     <p class="card-text">Linguagem otimizada para desenvolvimento rápido e seguro, base do Flutter.</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card tech-card firestore animated-element" style="transition-delay: 1.1s;">
                                 <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <img src="imagem 3.png" alt="firestore" width="50px" height="50px">
+                                <div class="card-body text-center">
+                                    <img src="imagem 3.png" alt="firestore" class="img-fluid mb-2" style="max-width: 60px;">
                                     <h5 class="card-title">FIRESTORE DATABASE</h5>
                                     <p class="card-text">Banco de dados No SQL em tempo real e altamente escalável.</p>
                                 </div>
@@ -145,33 +135,33 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card tech-card emulators animated-element" style="transition-delay: 1.3s;">
                                 <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <img src="imagem 4.png" alt="emulator" width="50px" height="50px">
+                                <div class="card-body text-center">
+                                    <img src="imagem 4.png" alt="emulator" class="img-fluid mb-2" style="max-width: 60px;">
                                     <h5 class="card-title">FIRESTORE EMULATORS</h5>
                                     <p class="card-text">Ambiente de testes local, permitindo desenvolver e validar funcionalidades sem custos adicionais.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card tech-card mlkit animated-element" style="transition-delay: 1.5s;">
                                 <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <img src="imagem 5.png" alt="google" width="50px" height="50px">
+                                <div class="card-body text-center">
+                                    <img src="imagem 5.png" alt="google" class="img-fluid mb-2" style="max-width: 60px;">
                                     <h5 class="card-title">GOOGLE ML KIT</h5>
                                     <p class="card-text">Integração com IA para reconhecimento de texto (OCR) e processamento de imagem no dispositivo.</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-4 mb-4">
+                        <div class="col-12 col-sm-6 col-md-4 mb-4">
                             <div class="card tech-card proguard animated-element" style="transition-delay: 1.7s;">
                                 <img src="" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <img src="imagem 6.png" alt="integracao" width="50px" height="50px">
+                                <div class="card-body text-center">
+                                    <img src="imagem 6.png" alt="integracao" class="img-fluid mb-2" style="max-width: 60px;">
                                     <h5 class="card-title">INTEGRAÇÃO COM R8 E PROGUARD</h5>
                                     <p class="card-text">Otimização de código, redução do tamanho do app e proteção contra engenharia reversa.</p>
                                 </div>
@@ -185,11 +175,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Seleciona todos os elementos com a classe de animação
             const animatedElements = document.querySelectorAll('.animated-element');
-            
-            // Adiciona a classe 'fade-in' a todos os elementos para iniciar a transição
-            // O 'transition-delay' no CSS inline garante a animação em cascata
             animatedElements.forEach(element => {
                 element.classList.add('fade-in');
             });
